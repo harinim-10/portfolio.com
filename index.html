@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta-name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harini M - Backend Developer</title>
+
+  <style>
+    /* ---------------- BACKGROUND ANIMATION ---------------- */
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(120deg, #4b3aff, #ff4f91, #00d4ff);
+      background-size: 400% 400%;
+      animation: gradientMove 12s ease infinite;
+      color: white;
+      scroll-behavior: smooth;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* ---------------- NAVBAR ---------------- */
+    .navbar {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 12px 0;
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      z-index: 1000;
+    }
+
+    .navbar a {
+      color: white;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 20px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .navbar a:hover {
+      background: rgba(255,255,255,0.25);
+      transform: scale(1.08);
+    }
+
+    /* ---------------- GENERAL CONTAINER ---------------- */
+    .container {
+      width: 85%;
+      max-width: 900px;
+      margin: 110px auto 50px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ---------------- SECTIONS ---------------- */
+    .section {
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(12px);
+      padding: 25px;
+      border-radius: 15px;
+      margin-top: 25px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+      transition: 0.4s;
+    }
+
+    .section:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+    }
+
+    h1, h2 {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 40px;
+      letter-spacing: 1px;
+    }
+
+    h3 {
+      margin-top: 8px;
+      font-weight: 400;
+    }
+
+    /* ---------------- LINKS ---------------- */
+    a {
+      color: #ffe66d;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* ---------------- SKILLS TAGS ---------------- */
+    .skills span {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 8px 14px;
+      margin: 6px;
+      border-radius: 20px;
+      display: inline-block;
+      font-size: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      transition: 0.3s;
+    }
+
+    .skills span:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: scale(1.1);
+    }
+
+    .services li {
+      margin: 8px 0;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* GLOW EFFECT ORBS */
+    .glow {
+      position: fixed;
+      width: 350px;
+      height: 350px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #ffffff60, transparent 70%);
+      animation: floatGlow 8s infinite ease-in-out alternate;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    @keyframes floatGlow {
+      from { transform: translateY(0px); opacity: 0.6; }
+      to { transform: translateY(-60px); opacity: 1; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- Floating Glow Background -->
+  <div class="glow" style="top: 10%; left: 5%;"></div>
+  <div class="glow" style="bottom: 10%; right: 5%;"></div>
+
+  <div class="container">
+
+    <header>
+      <h1>Harini M</h1>
+      <h3>Back-End Developer | AI & ML Enthusiast</h3>
+    </header>
+
+    <div class="section" id="contact">
+      <h2>📞 Contact</h2>
+      <p><a href="tel:+917010398134">Phone: 7010398134</a></p>
+      <p><a href="mailto:harinimurugeasan@gmail.com">Email: harinimurugeasan@gmail.com</a></p>
+      <p><a href="https://www.linkedin.com/in/harini-m-b46510373" target="_blank">LinkedIn Profile</a></p>
+      <p><a href="https://github.com/harinim-10" target="_blank">GitHub Profile</a></p>
+    </div>
+
+    <div class="section" id="about">
+      <h2>👩‍💻 About Me</h2>
+      <p>
+        I’m Harini, a Back-End Developer who enjoys building fast, secure, and scalable systems.
+        I specialize in developing efficient APIs, optimizing server-side logic, and managing
+        databases to deliver smooth, high-performance applications.
+        I love solving complex technical problems, improving performance, and creating
+        strong backend architectures that power great user experiences.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>🎓 Education</h2>
+      <p>AI & Machine Learning</p>
+    </div>
+
+    <div class="section" id="services">
+      <h2>🛠 Services I Provide</h2>
+      <ul class="services">
+        <li>Designing effective and scalable database schemas</li>
+        <li>Writing advanced SQL and NoSQL queries</li>
+        <li>Performing CRUD operations for various applications</li>
+        <li>Ensuring data security, integrity, and reliability</li>
+      </ul>
+    </div>
+
+    <div class="section" id="skills">
+      <h2>💡 Skills</h2>
+      <div class="skills">
+        <span>Backend Development</span>
+        <span>JavaScript</span>
+        <span>Node.js</span>
+        <span>MySQL</span>
+        <span>React</span>
+        <span>Python</span>
+        <span>AI / ML</span>
+        <span>ML Models</span>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
